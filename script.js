@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const createBtn = document.getElementById('create-btn');
-    const tasksContainer = document.querySelector('.tasks');
+    const tasksContainer = document.querySelector('.task-container');
 
     createBtn.addEventListener('click', function() {
         // Create a new div element with class 'todos'
