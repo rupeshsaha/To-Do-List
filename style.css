@@ -116,8 +116,8 @@ span.do{
 }
 
 .task-container{
-   
-    height: 14rem;
+   width: 95%;
+    height: 95%;
     overflow: auto;
 }
 
