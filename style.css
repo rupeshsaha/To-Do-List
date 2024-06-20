@@ -32,6 +32,7 @@ span.do{
     width: 95vw;
     height: 83vh;
     
+    
 }
 
 /*
@@ -75,11 +76,13 @@ span.do{
     background-color: rgb(54, 54, 54);
    position: relative;
     border-radius: 20px;
-    height: auto;
+    height: 80%;
     width: 95%;
     box-shadow: 10px 10px 8px rgb(29, 29, 30);
     display: flex;
     flex-direction: column;
+    max-width: 652px;
+    
    
   
 }
@@ -95,10 +98,10 @@ span.do{
 }
 
 .todos{
-    background-color: rgb(111, 111, 114);
-    width: 25rem;
-    height: 1.7rem;
-    margin: 20px;
+    background-color: rgb(95, 95, 100);
+    width: 90%;
+    height: 2rem;
+    margin: 15px 15px 5px 15px;
     border-radius: 5px;
     font-family: monospace;
     display: flex;
@@ -117,8 +120,9 @@ span.do{
 
 .task-container{
    width: 95%;
-    height: 95%;
+    height: 78%;
     overflow: auto;
+ 
 }
 
 .create-new{
@@ -141,6 +145,23 @@ span.do{
 button{
     background: none ;
     border: none ;
+
+}
+
+.submit{
+    background-color: rgb(145, 114, 247);
+    width: 5rem;
+    height: 1.7rem;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    bottom:10px ;
+    right: 10px;
+    box-shadow: 3px 3px 15px rgb(29, 29, 30)
 
 }
 
