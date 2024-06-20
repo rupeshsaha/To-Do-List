@@ -101,7 +101,7 @@ span.do{
     background-color: rgb(95, 95, 100);
     width: 90%;
     height: 2rem;
-    margin: 15px 15px 5px 15px;
+    margin: 15px 8px 5px 10px;
     border-radius: 5px;
     font-family: monospace;
     display: flex;
@@ -112,7 +112,7 @@ span.do{
     
 }
 
-.todos-title{
+p{
     position:absolute;
     left :10px;
    color: aliceblue;
@@ -127,7 +127,7 @@ span.do{
 
 .create-new{
     background-color: rgb(145, 114, 247);
-    width: 5rem;
+    width: 25%;
     height: 1.7rem;
     margin: 10px;
     border-radius: 5px;
@@ -142,26 +142,27 @@ span.do{
    
 }
 
+.input-task{
+    width:60%;
+    height:22px;
+    margin-left: 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position:absolute;
+    bottom:18px;
+    
+    background: rgb(255, 254, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgb(29, 29, 30);
+
+
+
+}
+
 button{
     background: none ;
     border: none ;
 
 }
 
-.submit{
-    background-color: rgb(145, 114, 247);
-    width: 5rem;
-    height: 1.7rem;
-    margin: 10px;
-    border-radius: 5px;
-    font-family: monospace;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:absolute;
-    bottom:10px ;
-    right: 10px;
-    box-shadow: 3px 3px 15px rgb(29, 29, 30)
-
-}
 
