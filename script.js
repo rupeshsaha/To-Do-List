@@ -14,7 +14,8 @@ createBtn.addEventListener("click", () => {
 
         let newTitle = document.createElement("p");
         newTitle.innerText = inputTask.value.trim();
-        newTitle.style.fontSize = "18px"
+        newTitle.style.fontSize = "17px"
+        newTitle.style.fontFamily = "monospace"
         newTask.appendChild(newTitle);
 
         delBtn = document.createElement("i");
