@@ -100,7 +100,7 @@ span.do{
 .todos{
     background-color: rgb(95, 95, 100);
     width: 90%;
-    height: 2rem;
+    height: 2.5rem;
     margin: 15px 8px 5px 10px;
     border-radius: 5px;
     font-family: monospace;
@@ -125,8 +125,9 @@ p{
  
 }
 
+
 .create-new{
-    background-color: rgb(145, 114, 247);
+    background-color:  rgb(145, 114, 247);;
     width: 25%;
     height: 1.7rem;
     margin: 10px;
@@ -165,4 +166,7 @@ button{
 
 }
 
+.checked{
+    text-decoration: line-through;
+}
 
