@@ -116,6 +116,7 @@ p{
     position:absolute;
     left :10px;
    color: aliceblue;
+   /* word-wrap: normal; */
 }
 
 .task-container{
