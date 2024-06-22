@@ -104,7 +104,4 @@ function loadData() {
     }
 }
 
-tasks
-
-// Call loadData when the page loads to restore saved 
 document.addEventListener("DOMContentLoaded", loadData);
