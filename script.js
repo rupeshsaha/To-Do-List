@@ -11,6 +11,7 @@ createBtn.addEventListener("click", () => {
         newTask.classList.add("todos");
 
         let newTitle = document.createElement("p");
+        newTitle.classList.add("Title")
         newTitle.innerText = inputTask.value.trim();
         newTitle.style.fontSize = "17px";
         newTitle.style.marginLeft = "15px";
@@ -73,24 +74,36 @@ function loadData() {
             });
         });
 
-        let taskItems = taskContainer.querySelectorAll(".todos");
-        taskItems.forEach(item => {
-            let checkBox = item.querySelectorAll(".checkBox");
-            let taskTitle = item.querySelectorAll("p");
+        let checkBoxes = taskContainer.querySelectorAll(".checkBox");
+        let titles = taskContainer.querySelectorAll(".Title");
 
-            checkBox.addEventListener("change", () => {
-                taskTitle.classList.toggle("checked");
-                saveData();
-            });
 
-            taskItems.addEventListener("click", () => {
-                taskTitle.classList.toggle("checked");
-                checkBox.checked = taskTitle.classList.contains("checked");
+        titles.forEach(title => {
+            let parentTask = title.parentElement;
+
+            // Check if this task was previously checked
+            if (parentTask.classList.contains("checked")) {
+                title.classList.add("checked");
+                checkBox.checked = true;
+            }
+
+            // if(title.classList.contains("checked")){
+            //     checkBoxes.checked = "true"
+
+            // }
+
+            // Add click event listener to toggle checked class and checkbox state
+            parentTask.addEventListener("click", () => {
+                title.classList.toggle("checked");
+                checkBoxes.checked = titles.classList.contains("checked");
                 saveData();
             });
         });
+
+    
     }
 }
+
 
 
 // Call loadData when the page loads to restore saved tasks
